@@ -7,17 +7,17 @@ This is a project that was an implementation of a publication on using SAX to fi
 
 ## Instructions to use and run:
 
-1. Run sax.py to get sax words in sax_words_ri_all_Lshifts <Enter data-set name as parameter>
-2. Run buckets.py to generate buckets for all the sax words <OPTIONAL>
+1. Run sax.py to get sax words in sax_words_ri_all_Lshifts.Enter data-set name as parameter.
+2. Run buckets.py to generate buckets for all the sax words. (OPTIONAL)
 3. Check values of m, n in find_heuristic.py. Update if required. 
-4. Run find_heuristic.py to get collision matrix. <Enter data-set name as command-line parameter>
-5. Enter dataset location in main.py <Enter data-set name as command-line parameter>
-6. Run main.py. The results from every data-set these scripts are run on will be updated in a file called results (will be created in the first run)in the root directory of the project.
+4. Run find_heuristic.py to get collision matrix. Enter data-set name as command-line parameter.
+5. Enter dataset location in main.py. Enter data-set name as command-line parameter.
+6. Run main.py. The results from every data-set these scripts are run on will be updated in a file called results (will be created in the first run) in the root directory of the project.
 
 ## A few Results
 https://github.com/atishayjain708/shape-discord-identification/blob/master/Plots/ArrowHead_TRAIN_all.png
-[A plot of time-series of all the images in the data-set; ArrowHead_TRAIN in our case]((/Plots/ArrowHead_TRAIN_all.png).
-[The Discord (Shape number 23 as recognized by our algorithm)](/Plots/ArrowHead_TRAIN_23.png).
+![A plot of time-series of all the images in the data-set; ArrowHead_TRAIN in our case]((/Plots/ArrowHead_TRAIN_all.png).
+![The Discord (Shape number 23 as recognized by our algorithm)](/Plots/ArrowHead_TRAIN_23.png).
 
 ## Credits and References
 
