@@ -14,9 +14,13 @@ This is a project that was an implementation of a publication on using SAX to fi
 5. Enter dataset location in main.py. Enter data-set name as command-line parameter.
 6. Run main.py. The results from every data-set these scripts are run on will be updated in a file called results (will be created in the first run) in the root directory of the project.
 
+After running main.py, a file called 'results' will be created in the root directory. This contains the results in the following format 'Name_of_dataset  Minimum_distance  Serial_number_of_the_most_dissimilar_image'.
+
+This file will be updated in any iterations following the first one.
+
 ## A few Results
-https://github.com/atishayjain708/shape-discord-identification/blob/master/Plots/ArrowHead_TRAIN_all.png
-![A plot of time-series of all the images in the data-set; ArrowHead_TRAIN in our case]((/Plots/ArrowHead_TRAIN_all.png).
+
+![A plot of time-series of all the images in the data-set; ArrowHead_TRAIN in our case](/Plots/ArrowHead_TRAIN_all.png).
 ![The Discord (Shape number 23 as recognized by our algorithm)](/Plots/ArrowHead_TRAIN_23.png).
 
 ## Credits and References
