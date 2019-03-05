@@ -18,14 +18,25 @@ After running main.py, a file called 'results' will be created in the root direc
 
 This file will be updated in any iterations following the first one.
 
+## Plotting and verifying results
+
+The script *plot.py* can be used to plot **any** time-series. Use it as follows:
+
+1. Make sure the file you are trying to plot exists in the folder /DATA/
+2. Enter name of the data-set you wish to plot.
+3. In case you wish to plot one specific time-series (or the time-seres for a specific image) enter the index of that time series. This menu option will be helpful when trying to verify the results from our algorithm. (i.e. index will be picked up from the results file in the root directory). 
+
+The output will be plots of the required time-series or all the time-series in the dataset based on what options you chose.
+The plots are automatically saved in the **/Plots** folder.
+
 ## A few Results
 
 The Plots folder in the results branch has results and plots from a few sample datasets. 
 All new plots generated henceforth will also go to the same folder.
 Below are 2 results:
-![A plot of time-series of all the images in the data-set; ArrowHead_TRAIN in our case](/Plots/ArrowHead_TRAIN_all.png).
+![A plot of time-series of all the images in the data-set; ArrowHead_TRAIN in our case](/Plots/ArrowHead_TRAIN_all.png)
 We see one shape that sticks out as different. In the next image, it is the same shape identified by our algorithm.
-![The Discord (Shape number 23 as recognized by our algorithm)](/Plots/ArrowHead_TRAIN_23.png).
+![The Discord (Shape number 23 as recognized by our algorithm)](/Plots/ArrowHead_TRAIN_23.png)
 
 These results can be verified for any number of data-sets. A few have been done, with images saved in the Plots folder in the results branch.
 

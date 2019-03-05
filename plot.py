@@ -1,3 +1,7 @@
+# Make sure the file you are trying to plot exists in the folder /DATA/.
+# Enter name of the data-set you wish to plot.
+# In case you wish to plot one specific time-series (or the time-seres for a specific image) enter the index of that time series. This menu option will be helpful when trying to verify the results from our algorithm. (i.e. index will be picked up from the results file in the root directory).   
+
 import matplotlib.pyplot as plt
 import csv
 import sys
