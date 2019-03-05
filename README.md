@@ -20,8 +20,14 @@ This file will be updated in any iterations following the first one.
 
 ## A few Results
 
+The Plots folder in the results branch has results and plots from a few sample datasets. 
+All new plots generated henceforth will also go to the same folder.
+Below are 2 results:
 ![A plot of time-series of all the images in the data-set; ArrowHead_TRAIN in our case](/Plots/ArrowHead_TRAIN_all.png).
+We see one shape that sticks out as different. In the next image, it is the same shape identified by our algorithm.
 ![The Discord (Shape number 23 as recognized by our algorithm)](/Plots/ArrowHead_TRAIN_23.png).
+
+These results can be verified for any number of data-sets. A few have been done, with images saved in the Plots folder in the results branch.
 
 ## Credits and References
 
