@@ -35,10 +35,11 @@ The Plots folder in the results branch has results and plots from a few sample d
 All new plots generated henceforth will also go to the same folder.
 Below are 2 results:
 
-| Time-series of all the images in ArrowHead_TRAIN dataset | The Discord (Shape number 23 recognized by our algorithm) |
-| ------------------------- | ------------------------- |
-| ![](https://github.com/atishayjain708/shape-discord-identification/blob/results/Plots/ArrowHead_TRAIN_all.png) | ![](https://github.com/atishayjain708/shape-discord-identification/blob/results/Plots/ArrowHead_TRAIN_23.png) |
-
+| Dataset name | Time-series of all the images in the dataset | Most unusual shape identified by the algorithm |
+| ------------------------- | ------------------------- | ------------------------- |
+| ArrowHead_TRAIN | ![](https://github.com/atishayjain708/shape-discord-identification/blob/results/Plots/ArrowHead_TRAIN_all.png) | ![](https://github.com/atishayjain708/shape-discord-identification/blob/results/Plots/ArrowHead_TRAIN_23.png) |
+| Butterfly_A | ![](https://github.com/atishayjain708/shape-discord-identification/blob/results/Plots/Butterfly_A_all.png) | ![](https://github.com/atishayjain708/shape-discord-identification/blob/results/Plots/Butterfly_A_31.png) |
+ 
 We see one shape that sticks out as different. In the next image, it is the same shape identified by our algorithm.
 
 
