@@ -34,9 +34,11 @@ The plots are automatically saved in the `Plots` folder.
 The Plots folder in the results branch has results and plots from a few sample datasets. 
 All new plots generated henceforth will also go to the same folder.
 Below are 2 results:
-|A plot of time-series of all the images in the data-set; ArrowHead_TRAIN in our case|The Discord (Shape number 23 as recognized by our algorithm)|
-:-------------------------:|:-------------------------:
-![](https://github.com/atishayjain708/shape-discord-identification/blob/results/Plots/ArrowHead_TRAIN_all.png) | ![](https://github.com/atishayjain708/shape-discord-identification/blob/results/Plots/ArrowHead_TRAIN_23.png)
+
+| Time-series of all the images in ArrowHead_TRAIN dataset | The Discord (Shape number 23 recognized by our algorithm) |
+| ------------------------- | ------------------------- |
+| ![](https://github.com/atishayjain708/shape-discord-identification/blob/results/Plots/ArrowHead_TRAIN_all.png) | ![](https://github.com/atishayjain708/shape-discord-identification/blob/results/Plots/ArrowHead_TRAIN_23.png) |
+
 We see one shape that sticks out as different. In the next image, it is the same shape identified by our algorithm.
 
 
