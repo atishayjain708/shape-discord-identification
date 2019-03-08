@@ -2,6 +2,14 @@
 
 A collection of scripts to identify the most dissimilar shape (i.e. the discord) in a given data-base of images. Used SAX-PAA to convert image data to time-series and then, implements an algorithm to find the most dissimilar shape in approximately O(n) complexity (instead of the O(n^2) of Euclidean distance).
 
+## Applications of these scripts
+1. To clean datasets with images that have been wrongly classified.
+2. To identify abnormalities in datasets - for example, in a dataset of red-blood-cell images of a patient the algorithm can be used to detect the most abnormally shaped cell, giving out a possible diagnosisi for sickle-cell anaemia.
+3. Identifying deformities in human anatomy - joint structures or other skeletal abnormalities in a patient.
+4. Idenitfying rare species of flowers, microorganisms etc, that have been mistakenly grouped with other common species.
+
+These are a few of the possible applications; the scripts in this package can be used in any place that requires a machine to identify the most unique image in a given dataset, even if the dataset is prohibitively large for evaluation by humans.
+
 ## More about the scripts and tools here
 This is a project that was an implementation of a publication on using SAX to find unusual shapes in a database (Keogh. et al, 2006).
 
