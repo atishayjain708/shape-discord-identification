@@ -36,7 +36,7 @@ def get_hash(word): #input param 2 letter string
 	visited.add(h)
 	return h
 
-CM = np.zeros((m,m), dtype=int)
+collision_matrix = np.zeros((m,m), dtype=int)
 #instead of while true, run for 30 times
 temp_counter = 30
 while temp_counter > 0:
@@ -44,23 +44,23 @@ while temp_counter > 0:
 	for i in range(max_possible_buckets):
 		bucket_list.append([0] * 1)
 	lsh_indices = np.random.random_integers(0,3,2)
-	line_num = -1
+	cur_ts = -1
 	for line in sax_words_ri:
-		line_num+=1 # line_num indicates which time series we are currently processing
+		cur_ts+=1 # cur_ts indicates which time series we are currently processing
 		for word in line:
-			bucket_list[get_hash(word[lsh_indices[0]]+word[lsh_indices[1]])].append(line_num)
+			bucket_list[get_hash(word[lsh_indices[0]]+word[lsh_indices[1]])].append(cur_ts)
 
 # All words have been put into buckets
 	for ind in visited:
 		for i in bucket_list[ind]:
 			for j in bucket_list[ind]:
 				if i != j:
-					CM[i][j]+=1;
+					collision_matrix[i][j]+=1;
 	temp_counter-=1
 
 max_collisions = []
 line_num = 0
-for i in CM:
+for i in collision_matrix:
 	max = -9999
 	for j in i:
 		if j > max:
@@ -68,19 +68,19 @@ for i in CM:
 	max_collisions.append((max,line_num))
 	line_num+=1
 
-Outer_tuples = sorted(max_collisions) 				# outer heuristic
-Inner_tuples = sorted(max_collisions, reverse=True) # inner heuristic
+outer_tuples = sorted(max_collisions) 				# outer heuristic
+inner_tuples = sorted(max_collisions, reverse=True) # inner heuristic
 
 with open('heuristics'+sys.argv[1]+'.txt', 'w+') as h:
 	# Use loops to convert from list of tuples to list of values
-	# for i in Outer_tuples:
+	# for i in outer_tuples:
 	# 	Outer.append(i[0])
-	# for i in Inner_tuples:
+	# for i in inner_tuples:
 	# 	Inner.append(i[0])
-	for i in Outer_tuples:
+	for i in outer_tuples:
 		h.write(str(i[1]))
 		h.write(' ')
 	h.write('\n')
-	for i in Inner_tuples:
+	for i in inner_tuples:
 		h.write(str(i[1]))
 		h.write(' ')
